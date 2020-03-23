@@ -1,0 +1,10 @@
+version: '2'
+
+services: 
+  web03:
+    build: ./server/
+    restart: always
+    volumes:
+        - ./server/pages:/usr/local/apache2/htdocs
+    ports:
+       - "10001:80"
