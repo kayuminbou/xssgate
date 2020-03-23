@@ -6,17 +6,25 @@
     </head>
 
     <body>
-        <h2>Challege 02</h2>
+        <h2>Challege 04</h2>
         <?php
             if (isset($_GET["payload"]) && $_GET["payload"] != "") {
                 $payload = $_GET["payload"];
-                // WAF1 主要タグ禁止
-                if(preg_match("/<(script|img|iframe)/", $payload)){
+                // WAF1 主要タグ禁止(小文字含む)
+                if(preg_match("/<(script)/i", $payload)){
+                    $payload = "";
+                }
+                // WAF2 イベントハンドラ禁止
+                if(preg_match("/<[\w\s]+on[\w]+=/i", $payload)){
+                    $payload = "";
+                }
+                // WAF3 javascriptスキーム禁止
+                if(preg_match("/javascript:/i", $payload)){
                     $payload = "";
                 }
             }
         ?>
-        <form action="./02.php" method="get">
+        <form action="./04.php" method="get">
             <input type="text" name="payload" value="<?php print $payload; ?>"><br/>
             <input type="submit" value="submit"><br/>
         </form>
