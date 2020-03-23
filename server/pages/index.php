@@ -39,7 +39,9 @@
 <main role="main" class="container">
     <h1>Welcome to xssgate!!</h1>
     <p class="lead">クリア条件：アラート発火</p><br/>
-    <a href="/challenges/01.php">challenge 01</a>
-    <a href="/challenges/02.php">challenge 02</a>
+    <a href="/challenges/01.php">challenge 01</a><br/>
+    <a href="/challenges/02.php">challenge 02</a><br/>
+    <a href="/challenges/03.php">challenge 03</a><br/>
+    <a href="/challenges/04.php">challenge 04</a><br/>
 </main>
 </html>
