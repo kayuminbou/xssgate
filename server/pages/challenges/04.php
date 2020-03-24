@@ -22,6 +22,7 @@
                 if(preg_match("/javascript:/i", $payload)){
                     $payload = "";
                 }
+                // 想定解：<svg%09onload=alert()>
             }
         ?>
         <form action="./04.php" method="get">

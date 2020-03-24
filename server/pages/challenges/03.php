@@ -14,6 +14,7 @@
                 if(preg_match("/<(script|img|iframe)/i", $payload)){
                     $payload = "";
                 }
+                // 想定解：<svg onload=alert()>
             }
         ?>
         <form action="./03.php" method="get">

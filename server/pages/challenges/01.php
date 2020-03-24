@@ -10,6 +10,7 @@
         <?php
             if (isset($_GET["payload"]) && $_GET["payload"] != "") {
                 $payload = $_GET["payload"];
+                // 想定解：<script>alert()</script>
             }
         ?>
         <form action="./01.php" method="get">

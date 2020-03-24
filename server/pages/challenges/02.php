@@ -14,6 +14,7 @@
                 if(preg_match("/<(script|img|iframe)/", $payload)){
                     $payload = "";
                 }
+                // 想定解：<scRipt>alert()</script>
             }
         ?>
         <form action="./02.php" method="get">
