@@ -38,10 +38,18 @@
 
 <main role="main" class="container">
     <h1>Welcome to xssgate!!</h1>
-    <p class="lead">クリア条件：アラート発火</p><br/>
+    <p class="lead">クリア条件：アラート発火</p>
+    <h2>Basic</h2>
+    <p>ユーザの操作なし、かつすべてのブラウザで動作可能なペイロードで発火させること</p>
     <a href="/challenges/01.php">challenge 01</a><br/>
     <a href="/challenges/02.php">challenge 02</a><br/>
     <a href="/challenges/03.php">challenge 03</a><br/>
     <a href="/challenges/04.php">challenge 04</a><br/>
+    <a href="/challenges/05.php">challenge 05</a><br/>
+    <a href="/challenges/06.php">challenge 06</a><br/>
+    <a href="/challenges/07.php">challenge 07</a><br/>
+    <a href="/challenges/08.php">challenge 08</a><br/>
+    <a href="/challenges/09.php">challenge 09</a><br/>
+    <a href="/challenges/10.php">challenge 10</a><br/>
 </main>
 </html>

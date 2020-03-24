@@ -6,7 +6,7 @@
     </head>
 
     <body>
-        <h2>Challege 03</h2>
+        <h2>Challenge 03</h2>
         <?php
             if (isset($_GET["payload"]) && $_GET["payload"] != "") {
                 $payload = $_GET["payload"];

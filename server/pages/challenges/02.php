@@ -6,7 +6,7 @@
     </head>
 
     <body>
-        <h2>Challege 02</h2>
+        <h2>Challenge 02</h2>
         <?php
             if (isset($_GET["payload"]) && $_GET["payload"] != "") {
                 $payload = $_GET["payload"];
@@ -14,7 +14,7 @@
                 if(preg_match("/<(script|img|iframe)/", $payload)){
                     $payload = "";
                 }
-                // 想定解：<scRipt>alert()</script>
+                // 想定解："><scRipt>alert()</script>
             }
         ?>
         <form action="./02.php" method="get">
